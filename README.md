@@ -1,6 +1,6 @@
 # 2048 in React + Typescript
 
-This is a React + Typescript version of the game 2048.
+This is a React + Typescript version of the game 2048. You can play the game here: https://nathanqueija.github.io/2048/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
