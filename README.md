@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# 2048 in React + Typescript
+
+This is a React + Typescript version of the game 2048.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -24,23 +26,16 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## The current status and what comes next
 
-### `npm run eject`
+- I decided to focus on the core logic of the game instead of the visuals. As a result, you'll notice that much more care is poured onto the functions that operate on the board.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- My approach to performing board operations is following the functional paradigm as much as possible. None of the operations mutates the board in place. I tried to be as close to the data as I could without adding any abstraction layers on top of it.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Core logic is not fully covered with tests, but most are. So I decided to focus on testing the critical parts of the board operations.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Next steps will be to add integration tests and UI tests to resemble how the user would use the board.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I plan to add game controls like restart, etc.
