@@ -24,15 +24,14 @@ const App = () => {
   const sizeRef = useRef(AppBoard.size(board));
 
   const nextRound = (board: AppBoard.Board) => {
-    //TODO: Debounce
-    if (AppBoard.maxValue(board) === 2048) {
-      setIsGameOver(true);
-      return;
-    }
+    //TODO: Debounce or use key up
 
     try {
       const newBoard = AppBoard.fillSlot(board, 1);
       setBoard(newBoard);
+      if (AppBoard.maxValue(newBoard) === 2048) {
+        setIsGameOver(true);
+      }
     } catch (e) {
       setIsGameOver(true);
     }
